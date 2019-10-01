@@ -1,0 +1,11 @@
+ul.nav.nav-pills.mb-3.tab-component(role='tablist')
+  li.nav-item
+    a.pills-detail-single-tab.nav-link.active(data-toggle='pill', href='.pills-detail-single', role='tab', aria-controls='pills-detail-single', aria-selected='false') Detail
+  li.nav-item.d-mobile
+    a.pills-comment-single-tab.nav-link(data-toggle='pill', href='.pills-comment-single', role='tab', aria-controls='pills-detail-single', aria-selected='false') Comment
+
+.tab-content
+  .pills-detail-single.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-detail-single-tab')
+    include detail-box
+  .pills-comment-single.tab-pane.fade(role='tabpanel', aria-labelledby='pills-comment-single-tab').d-mobile
+    include comment-box

@@ -1,0 +1,13 @@
+.c_mosaic {
+    height: 100px;
+    width: 300px;
+    border: 1px solid #333;
+}
+
+.c_mosaic_show-more {
+    display: none;
+}
+
+.c_mosaic--show-more-enabled .c_mosaic_show-more {
+    display: block;
+}

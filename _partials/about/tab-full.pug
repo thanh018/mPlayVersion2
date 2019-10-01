@@ -1,0 +1,15 @@
+ul.nav.nav-pills.mb-3.tab-component(role='tablist')
+  li.nav-item.nav-item-episodes
+    a.pills-video-list-tab.nav-link.active(data-toggle='pill', href='.pills-video-list', role='tab', aria-controls='pills-video-list', aria-selected='true') Video List
+  li.nav-item
+    a.pills-detail-tab.nav-link(data-toggle='pill', href='.pills-detail', role='tab', aria-controls='pills-detail', aria-selected='false') Detail
+  li.nav-item.d-mobile
+    a.pills-comment-tab.nav-link(data-toggle='pill', href='.pills-comment', role='tab', aria-controls='pills-detail', aria-selected='false') Comment
+
+.tab-content
+  .pills-video-list.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-video-list-tab')
+    include post-card
+  .pills-detail.tab-pane.fade(role='tabpanel', aria-labelledby='pills-detail-tab')
+    include detail-box
+  .pills-comment.tab-pane.fade(role='tabpanel', aria-labelledby='pills-comment-tab').d-mobile
+    include comment-box

@@ -1,0 +1,53 @@
+.content-video-component-black.bg-black
+    .content-video-header
+        
+        h1.title.font-bold.uppercase 1965: Behind The Scene
+        h2.subtitle
+            span.type S1:E2
+            span.text The Homecoming
+        h3.category Short Film • 2015 • 44 mins
+        
+
+    .rating-block(data-rating)
+        a(href="javascript:void(0)" data-star).star-link
+            img(src="assets/images/icons/star-grey.png").star-grey.hidden
+            img(src="assets/images/icons/stars.svg").star-yellow
+        a(href="javascript:void(0)" data-give-rating).rate-link.give-rating-btn
+            img(src="assets/images/icons/give-a-rating.svg").image-rate
+    p.description 4 Lines of show description The series negates all happenings in the predecessors and explores what might have happened should the boys have been assigned to the Naval Diving Unit. 
+    
+    .share-block(data-share)
+        a(href="javascript:void(0)").add-to-vafourite
+            img(src="assets/images/icons/add-to-favourites.svg")
+        a(href="javascript:void(0)").add-to-vafourite-clicked.hidden
+            img(src="assets/images/icons/add-to-favourite-click.png")
+        a(href="javascript:void(0)" data-toggle='modal', data-target='.share-popup' data-share-btn).share-link
+            img(src="assets/images/icons/share.svg")
+.share-popup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog(role='document').centered
+    .modal-header
+      h4.modal-title.font-bold Share a link
+      button(type='button', data-dismiss='modal') 
+        span.icon-x ×
+        span.text-close CLOSE
+    .modal-content
+        .content-video-social-block
+            ul.social-list
+                li.social-item.social-item-facebook
+                    a.social-link
+                        img(src="assets/images/icons/facebook.svg")
+                li.social-item.social-item-twitter
+                    a.social-link
+                        img(src="assets/images/icons/twitter.svg")
+                li.social-item.social-item-google-plus
+                    a.social-link
+                        img(src="assets/images/icons/google-plus.svg")
+                li.social-item.social-link-icon
+                    a.social-link
+                        img(src="assets/images/icons/link.svg")
+                li.social-item.social-email
+                    a.social-link
+                        img(src="assets/images/icons/email.svg")
+            .copy-wrapper(data-copy)
+                input#input-copy(value="http://mplay.com/watch?v=KFcFDtLhOr8" type="text")
+                button.copy-btn Copy

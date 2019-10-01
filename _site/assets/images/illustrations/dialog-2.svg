@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="406.617" height="247.853" viewBox="0 0 406.617 247.853">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fb5989"/>
+      <stop offset="1" stop-color="#ee2d25"/>
+    </linearGradient>
+  </defs>
+  <g id="Background" transform="translate(-109.5 -43)">
+    <path id="Path_309" data-name="Path 309" d="M516.116,43H109.9l-.4,247.853,406.617-.777Z" transform="translate(0 0)" fill="#e1e1e1"/>
+    <g id="Group_725" data-name="Group 725" transform="translate(320.321 173.884)">
+      <path id="Path_310" data-name="Path 310" d="M668.686,277.5H486.9v8.484H674.6C672.258,283.416,669.8,280.346,668.686,277.5Z" transform="translate(-486.9 -277.5)" fill="#e1e1e1"/>
+    </g>
+    <rect id="Rectangle_883" data-name="Rectangle 883" width="406.159" height="30.474" transform="translate(109.902 43)" fill="#f3f3f3"/>
+    <circle id="Ellipse_124" data-name="Ellipse 124" cx="4.8" cy="4.8" r="4.8" transform="translate(126.534 53.828)" fill="#e1e1e1"/>
+    <circle id="Ellipse_125" data-name="Ellipse 125" cx="4.8" cy="4.8" r="4.8" transform="translate(141.995 53.828)" fill="#e1e1e1"/>
+    <circle id="Ellipse_126" data-name="Ellipse 126" cx="4.8" cy="4.8" r="4.8" transform="translate(157.455 53.828)" fill="#e1e1e1"/>
+    <rect id="Rectangle_885" data-name="Rectangle 885" width="268.765" height="145.614" transform="translate(177.659 101.091)" fill="#fff"/>
+    <path id="Polygon_7" data-name="Polygon 7" d="M36.848,0,73.7,61.9H0Z" transform="translate(344.567 136.947) rotate(90)" fill="#d4d4d4"/>
+    <rect id="Rectangle_886" data-name="Rectangle 886" width="77.454" height="30.207" transform="translate(369.745 101.091)" fill="#d4d4d4"/>
+    <text id="LIVE" transform="translate(400.727 122.836)" font-size="14" font-family="ExoSoft-Medium, Exo Soft" font-weight="500"><tspan x="0" y="0">LIVE</tspan></text>
+    <circle id="Ellipse_127" data-name="Ellipse 127" cx="6.196" cy="6.196" r="6.196" transform="translate(382.138 111.16)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

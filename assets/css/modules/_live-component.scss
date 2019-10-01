@@ -1,0 +1,175 @@
+.live-component {
+    padding: 15px 54px 30px 54px;
+    margin-top: 50px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .banner-overlay-bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, black 80%);
+        z-index: 2;
+
+        @media (max-width: 767px) {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, black 60%); 
+        }
+    }
+
+    .banner-overlay-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(to top, rgba(0, 0, 0,0) 10%, rgba(0, 0, 0, 0.6) 120%);
+        z-index: 2;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0;
+        display: block;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .small {
+        .video-component {
+            @media (max-width: 767px) {
+                height: 400px;
+            }
+        }
+
+        .btn-play {
+            z-index: 3;
+        }
+    }
+
+    .live-video-wrapper {
+        flex-basis: 50%;
+        @media (max-width: 767px) {
+            position: relative;
+        }
+        h1 {
+            font-size: 13px;
+            color: #fff;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 3;
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top: 0;
+                z-index: 2;
+                padding: 10px 30px;
+                margin: 0;
+            }
+        }
+    }
+
+    .live-content {
+        flex-basis: 50%;
+        font-size: 14px;
+        padding: 0 20px 0 75px;
+        color: #fff;
+        z-index: 3;
+
+        @media (max-width: 767px) {
+            padding: 30px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 22px;
+            position: relative;
+
+            @media (max-width: 767px) {
+                padding-left: 20px;
+                font-size: 16px;
+            }
+
+            &::before {
+                position: absolute;
+                left: -30px;
+                content: "\f192";
+                font-family: 'FontAwesome';
+                color: $color-red;
+
+                @media (max-width: 767px) {
+                    left: 0;
+                }
+            }
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 20px;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+
+            .time {
+                font-size: 14px;
+                padding-left: 10px;
+            }
+        }
+
+        .subtitle {
+            margin-top: 20px;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .live-description {
+            margin-top: 10px;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+
+    .live-countdown {
+        display: flex;
+        align-items: center;
+        h4 {
+            font-size: 16px;
+            padding-right: 20px;
+        }
+
+        .countdown-wrapper {
+            margin-top: 15px;
+
+            .number {
+                span {
+                    background-color: #fff;
+                    color: #333;
+                    font-size: 16px;
+                    line-height: 28px; 
+                    height: 28px;               
+                }
+
+                .text {
+                    font-size: 10px;
+                    margin-top: 3px;
+                }
+            }
+
+            .countdown-item-times {
+                &:before {
+                    top: 4px;
+                }
+            }
+        }
+    }
+}

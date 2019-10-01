@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="228" height="23" viewBox="0 0 228 23">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="228" height="23" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Component" clip-path="url(#clip-path)">
+    <g id="rate-star-button" transform="translate(0 -6.375)">
+      <g id="star-rate" transform="translate(0 6.375)">
+        <path id="Path_144" data-name="Path 144" d="M12,23.975l7.4,5.4-2.8-8.8,7.4-5.2H15l-3-9-3,9H0l7.4,5.2-2.8,8.8Z" transform="translate(0 -6.375)" fill="#efce4a"/>
+      </g>
+    </g>
+    <g id="rate-star-button-2" data-name="rate-star-button" transform="translate(28 -6.375)">
+      <g id="star-rate-2" data-name="star-rate" transform="translate(0 6.375)">
+        <path id="Path_144-2" data-name="Path 144" d="M12,23.975l7.4,5.4-2.8-8.8,7.4-5.2H15l-3-9-3,9H0l7.4,5.2-2.8,8.8Z" transform="translate(0 -6.375)" fill="#efce4a"/>
+      </g>
+    </g>
+    <g id="rate-star-button-3" data-name="rate-star-button" transform="translate(56 -6.375)">
+      <g id="star-rate-3" data-name="star-rate" transform="translate(0 6.375)">
+        <path id="Path_144-3" data-name="Path 144" d="M12,23.975l7.4,5.4-2.8-8.8,7.4-5.2H15l-3-9-3,9H0l7.4,5.2-2.8,8.8Z" transform="translate(0 -6.375)" fill="#efce4a"/>
+      </g>
+    </g>
+    <g id="rate-star-button-4" data-name="rate-star-button" transform="translate(84 -6.375)">
+      <g id="star-rate-4" data-name="star-rate" transform="translate(0 6.375)">
+        <path id="Path_144-4" data-name="Path 144" d="M12,23.975l7.4,5.4-2.8-8.8,7.4-5.2H15l-3-9-3,9H0l7.4,5.2-2.8,8.8Z" transform="translate(0 -6.375)" fill="#efce4a"/>
+      </g>
+    </g>
+    <g id="star-rate-5" data-name="star-rate" transform="translate(112)">
+      <path id="Path_144-5" data-name="Path 144" d="M12,23.975l7.4,5.4-2.8-8.8,7.4-5.2H15l-3-9-3,9H0l7.4,5.2-2.8,8.8Z" transform="translate(0 -6.375)" fill="#8e8e8e"/>
+    </g>
+    <text id="_4.0_STARS_" data-name="4.0 STARS " transform="translate(141 18.875)" fill="#fff" font-size="18" font-family = "Exo, sans-serif"><tspan x="0" y="0">4.0 STARS </tspan></text>
+  </g>
+</svg>

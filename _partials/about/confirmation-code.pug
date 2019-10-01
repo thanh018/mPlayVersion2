@@ -1,0 +1,20 @@
+.dialogs-box.code-box
+    .confirmation-header.dialog-header.modal-header
+        h1.title.text-center Comfirmation Code
+
+    form.form-confirmation
+        .group-item
+            lable.lable.enter-code-label Enter code
+            .enter-code
+                input(type="text" placeholder="7620G-2")
+                a(href="#" data-login-enter-code).login-btn
+                    img(src="assets/images/illustrations/login.svg" alt="login")
+        p.text-code-opt
+            span OTP code send to 
+            span.font-bold +8342424535427
+        p.resend-block
+            a(href="#" title="").resend-btn Resend
+            span.text-time in 0:59
+            
+        p.without-link
+            a(href="#" title="" data-login-from-code).underline Continue without logining in

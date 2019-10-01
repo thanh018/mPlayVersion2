@@ -1,0 +1,22 @@
+extends ../_layouts/layout
+
+block head_end
+  link(rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css")
+  link(rel="stylesheet" type="text/css" href="assets/css/style.css")
+
+block content
+  include ../_partials/home/banner
+  include ../_partials/post/post-fix-top
+  .bg-black-2
+    .container.border-gray
+      include ../_partials/home/live-component
+  include ../_partials/post/post-slide
+  include ../_partials/post/post-slide-2
+  include ../_partials/post/post-slide-3
+  include ../_partials/post/post-slide-4
+  include ../_partials/post/post-slide-5
+  include ../_partials/post/post-slide-6
+  include ../_partials/post/post-slide-7
+  include ../_partials/post/post-slide-8
+
+block body_end

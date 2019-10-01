@@ -1,0 +1,39 @@
+
+.series-page {    
+    .more-info-of-banner {
+        margin-top: 75px;
+
+        @media (max-width: 767px) {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    .width-60 {
+        padding-right: 20px;
+    }
+
+
+    .post-card-component {
+        margin-bottom: 50px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .detail-box-component {
+        margin-bottom: 50px;
+        padding: 25px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    h4.title {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+.detail-box-component {
+    font-size: 14px;
+    overflow: auto;
+    color: #000;
+    background-color: #e2e2e2;
+    padding: 40px;
+
+    .version-black & {
+        background-color: #333;
+        color: $color-white;
+    }
+
+    .detail-list {
+        padding-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .detail-item {
+        width: 50%;
+        margin-bottom: 30px;
+
+        &:last-child {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .entity {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+    }
+}

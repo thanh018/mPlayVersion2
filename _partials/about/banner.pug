@@ -1,0 +1,41 @@
+
+.banner-group
+    .banner-block(style="background: url('assets/images/banner/banner-10.jpg') center center / cover no-repeat")
+        .banner-overlay-top
+        .banner-overlay-bottom
+        .container
+        .banner-content
+            .banner-content-inner
+                span.banner-subtitle Drama • 2015
+                h1.banner-title 3688: Interview with Jerry Huang Drama
+                p.banner-desc
+                    | Xia Fei Fei is a 38-year-old parking attendant, locally known as "summon auntie", or "Feng Fei Fei", who has often dreamed of becoming a singer like her idol, 
+
+            ul.banner-list-link
+                li.watch-now
+                    a(href="series-page.html").watch-now-link
+                        img.d-desktop(src="assets/images/icons/watch-now.svg")
+                        img.d-mobile(src="assets/images/icons/play icon.svg")
+                        span.d-mobile Watch now
+                li.add-to-favourist
+                    a(href="javascript:void(0)").add-to-favouristlink
+                        img.d-desktop(src="assets/images/icons/add-to-favourites.svg")
+                        img.d-mobile(src="assets/images/icons/favourite-icon.svg")
+                        span.d-mobile Add to favourist
+        a(href="javascript:void(0)" data-more-info-btn).more-info-block.more-info-link
+            img(src="assets/images/icons/more-info.svg").more-image.d-desktop
+            span.more-info-btn.more-image.d-mobile(href="#" data-toggle='modal', data-target='.more-info-of-banner-popup')  MORE INFO
+            img(src="assets/images/icons/less-info.svg").less-image
+    include more-info-component
+
+.more-info-of-banner-popup.more-info-group.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+    .modal-dialog(role='document').centered
+        .modal-header
+            h1.uppercase.font-bold.title TRAILER
+            button(type='button', data-dismiss='modal') 
+                span.icon-x ×
+                span.text-close CLOSE
+        .modal-content
+            .trailer-component
+                include video
+            include content-video

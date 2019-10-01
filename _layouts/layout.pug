@@ -1,0 +1,54 @@
+include ../_partials/mixins/all
+doctype html
+html(lang="en")
+  head
+    title=title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Exo&display=swap', rel='stylesheet')
+
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico")
+
+    script(src="https://www.youtube.com/iframe_api")
+    script(src='assets/js/jquery-3.4.1.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/slick.min.js')
+    script(src='assets/js/auto-reload.js')
+    script(src='assets/js/post-slide.js')
+    script(src="assets/js/menu-scroll.js")
+    script(src="assets/js/video.js")
+    script(src="assets/js/show-video-popup.js")
+    script(src="assets/js/slide-dialog.js")
+    script(src="assets/js/countdown/jquery.countdown.js")
+    script(src="assets/js/moment/moment.min.js")
+    script(src="assets/js/slide-dialog.js")
+    script(src="assets/js/countdown.js")
+    script(src="assets/js/rating.js")
+    script(src="assets/js/share.js")
+    script(src="assets/js/copy.js")
+    script(src="assets/js/test.js")
+
+    //- block head
+    block head_end
+
+  body.bg-white(class= classBody auto-reload)
+    //- block header
+    include ../_partials/header
+
+    //- block content
+    block content
+
+    //- block footer
+    include ../_partials/footer
+
+    //- block body_end
+    block body_end
+      
+

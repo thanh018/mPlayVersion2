@@ -1,0 +1,63 @@
+header(data-menu-scroll data-image-scroll="assets/images/logo/logo white.svg")
+  .container
+    nav
+      .nav-left
+        a.logo-link(href='index.html' title="Logo")
+          img.logo-image.d-desktop(src="assets/images/logo/logo.svg" alt="Logo Play")
+          img.logo-image.d-mobile(src="assets/images/logo/logo-words-white.svg" alt="Logo Play")
+        .dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Genres
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='#') Comedy
+            a.dropdown-item(href='#') Lifestyle
+            a.dropdown-item(href='#') Infotainment
+            a.dropdown-item(href='#') Variety Shows
+            a.dropdown-item(href='#') Short Films
+            a.dropdown-item(href='#') Talks and Seminas 
+        a.favourits(href='favourite-page.html' title="") My favourits
+      .nav-right
+        form.form-inline.form-search
+          i.fa.fa-search(aria-hidden='true')
+          input.form-control(type='text', placeholder='Search titles, actors, genres…', aria-label='Search')
+        span.dialog-btn.icon(href="#" data-toggle='modal', data-target='.dialog-popup' data-dialog-btn) What is Mplay?
+        span.learn-more-btn.d-mobile(data-load-more-btn) learn more
+        a.login.d-desktop(href="#" data-toggle='modal', data-target='.login-popup' data-menu-login) login
+        a.account.d-desktop(href="#" data-toggle='modal', data-target='.profile-popup' data-menu-account).hidden
+          img(src="assets/images/profile/account.png" alt="User").image-account
+          span.text-account Account
+
+.sign-up-popup.modal.fade(tabindex='-2', role='dialog', aria-labelledby='exampleModalLabel2', aria-hidden='true')
+  .modal-dialog(role='document').centered
+    .modal-content
+      include about/signup
+
+.login-popup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog(role='document').centered
+    .modal-content
+      include about/login
+
+.confirmation-popup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog(role='document').centered
+    .modal-content
+      include about/confirmation-code
+
+.dialog-popup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog(role='document').centered
+    .modal-header.d-desktop
+      h4.modal-title.text-center.font-bold What is mPlay?
+      button(type='button', data-dismiss='modal') 
+        span.icon-x ×
+        span.text-close CLOSE
+    .modal-content
+      include about/instruction-dialog
+
+.profile-popup.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog(role='document').centered
+    .modal-header
+      h4.modal-title.text-center.font-bold.d-desktop Account Settings
+      button(type='button', data-dismiss='modal') 
+        span.icon-x ×
+        span.text-close CLOSE
+    .modal-content
+      include about/profile

@@ -1,0 +1,346 @@
+.dialogs-box {
+    width: 370px;
+    border-radius: 10px;
+    background-color: $color-white;
+    position: relative;
+    box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: grey;
+
+    // common header
+    .modal-header {
+        border: none;
+
+        .title {
+            font-size: 22px;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+
+    .dialog-form {
+        padding: 25px 48px;
+    }
+
+    .group-item {
+        &+ .group-item {
+            margin-top: 25px;
+        }
+    }
+
+    .lable {
+        font-size: 14px;
+        color: $color-gray-5;
+    }
+
+    input {
+        border: 1px solid $color-gray-3;
+        padding: 0 10px;
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 5px;
+        &::placeholder {
+            color: $color-gray-4;
+            font-size: 14px;
+        }
+    }
+
+    a {
+        color: $color-green;
+        
+        &+ span {
+            margin-left: 5px;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+        
+    }
+
+    // login
+    .login-header {
+        padding: 48px 48px 25px 48px;
+        .title {
+            font-size: 22px;
+            color: #333;
+        }
+    }
+
+    .delimiter {
+        display: flex;
+        align-items: center;
+        padding: 25px 0;
+
+        .line {
+            width: 130px;
+            height: 1px;
+            background-color: $color-gray-5;
+        }
+
+        .text-or {
+            padding: 0 5px;
+            font-size: 14px;
+        }
+    }
+
+    // sign-up
+    .sign-up-header {
+        padding: 48px 48px 25px 48px;
+        background: linear-gradient(90deg, $color-blue, $color-green);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            padding-top: 35px;
+            margin-bottom: 15px; 
+        }
+
+        button {
+            color: white;
+        }
+
+        .title {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+    }
+
+    &.signup-box-component {
+        .group-item {
+            &+ .group-item {    
+                @media (max-width: 767px) {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .notice-text {
+        display: block;
+        color: grey;
+        margin-top: 10px;
+    }
+
+    // code box
+    .confirmation-header {
+        padding: 25px 48px 20px 48px; 
+    }
+
+    .form-confirmation {
+        padding: 0 48px 40px 48px;
+
+        .enter-code {
+            display: flex;
+
+            .login-btn {
+                margin-left: 7px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: #000;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .resend-btn {
+            color: #fff;
+            background-color: #000;
+            border-radius: 10px;
+            padding: 2px 7px;
+        }
+
+        .without-link,
+        .text-code-opt {
+            margin-top: 25px;
+        }
+    }
+    
+}
+
+.dialogs-box.profile-box {
+    color: $color-black;
+    width: auto;
+    padding: 30px 60px;
+    border-radius: 0 0 10px 10px;
+
+    @media (max-width: 767px) {
+        width: 370px;
+    }
+   
+    font-size: 10px;
+
+    .profile-inner {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    .profile-image {
+        max-width: 150px;
+        img {
+            width: 132px;
+            height: 132px;
+        }
+    }
+
+    button {
+        display: inline-block;
+        height: 45px;
+        width: 140px;
+        margin-top: 10px;
+        font-size: 14px;
+        border-radius: 45px;
+        padding: 0;
+
+        &.upload-picture {
+            background: linear-gradient(90deg, $color-blue, $color-green-1);
+            color: #fff;
+            display: inline-block;
+            border: 2px solid #175F4B;
+        }
+    
+        &.logout {
+            background: #fff;
+            color: #02A6DF;
+            border: 2px solid #02A6DF;
+            margin-top: 50px;
+    
+            @media (max-width: 767px) {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    
+
+    .profile-info {
+        padding-left: 40px;
+
+        @media (max-width: 767px) {
+            padding-left: 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        a {
+            color: #02A6DF;
+            font-size: 13px;
+        }
+
+        .group-item {
+            margin-top: 20px;
+            @media (max-width: 767px) {
+            }
+        }
+    }
+
+    
+}
+
+// x close
+.modal-header {
+    button {
+        color: #333;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        position: absolute;
+        right: 15px;
+        top: 9px;
+        display: flex;
+        align-items: center;
+
+        .icon-x {
+            font-size: 23px;
+            line-height: 1;
+        }
+
+        .text-close {
+            font-size: 14px;
+            margin-left: 5px
+        }
+    }
+}
+
+.sign-up-popup,
+.login-popup,
+.confirmation-popup,
+.profile-popup {
+
+    .modal-dialog {
+        margin: 0 auto;
+    } 
+}
+
+.profile-popup {
+    .modal-header {
+        background-color: #000;
+        color: #fff;
+        height: 40px;
+        padding: 10px;
+        position: relative;
+        border: none;
+        border-radius: 0;
+
+        @media (max-width: 767px) {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            width: 100px;
+            padding: 0;
+            z-index: 2;
+            background-color: transparent;
+        }
+
+        .modal-title {
+            font-size: 14px;
+        }
+
+        button {
+            @media (min-width: 768px) {
+                color: white;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .modal-dialog {
+        width: 540px;
+
+        @media (max-width: 767px) {
+            width: auto;
+
+            .modal-content {
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+
+

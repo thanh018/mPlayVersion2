@@ -1,0 +1,45 @@
+@import '_mixin.scss';
+//--------------  0.1. Color  -------------
+$main-color: #000;
+$color-red: #ca0b2a;
+$color-red-2: #bd1b1b;
+$color-white: #fff;
+$color-white-2: #F2F9FC;
+$color-black: #000;
+$color-black-1: #333;
+$color-gray: #343434;
+$color-grey: grey;
+$color-black-2: #727272;
+$color-gray-2: #979797;
+$color-gray-3: #707070;
+$color-gray-4: #AFAAAA;
+$color-gray-5: #6E6E6E;
+$color-white-2: rgba(255, 255, 255, 0.7);
+$color-yellow: yellow;
+$color-purple: #520552;
+$color-blue: #01A9E5; // rgba(1, 169, 229, 1);
+$color-green: #175F4B; // rgba(23, 95, 75, 1)
+
+$color-blue-1: rgba(1, 169, 229, 0.8);
+$color-green-1: rgba(23, 95, 75, 0.8);
+
+//----------  0.2. Social Color  ----------
+
+//--------------  0.3. Font  ---------------------
+$fz-h1: 48px; //
+$fz-h2: 36px; // title command, blog single title
+$fz-h3: 28px; // main title
+$fz-h4: 24px; // grid layout, col 2, 3, 4
+$fz-h5: 18px; // widget title
+$fz-h6: 16px; // post widget title
+$fz-para: 18px; // paragraph
+$fz-des: 16px; // description
+$fz-text: 14px; // label, blog info  
+$lh-des: 1.5556;
+$lh-big: 1.44;
+$lh-small: 1.2;
+//-------------- 04. Font Family ------------------
+@include font-face(NunitoSan-Bold, '../../../font/NunitoSans-Bold', 700, bold);
+$NunitoSan-Bold: 'NunitoSan-Bold', sans-serif;
+
+

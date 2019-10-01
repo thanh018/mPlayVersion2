@@ -1,0 +1,96 @@
+.width-60 {
+   width: 60%; 
+}   
+
+.width-40 {
+    width: 40%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.home {
+    .commnent-enter-block {
+        display: none;
+    }
+}
+
+.post-column {
+    .col-md-4 {
+        @media (min-width: 768px) {
+            padding: 0 10px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.post-slide-block {
+    .container {
+        padding-bottom: 40px;
+    }
+}
+
+.more-info-of-banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .home & {
+        display: none;
+    }
+
+    .favourite-page & {
+        display: none;
+    }
+
+    .post-full-image-component & {
+        margin-top: -41px;
+    }
+
+    .post-slide-block & {
+        margin-top: -74px;
+        z-index: 10;
+        position: relative;
+    }
+
+    .comment-box-component {
+        margin-top: 50px;
+        padding-right: 10px;
+    }
+    
+
+    .content-video-component {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-open .more-info-group {
+        overflow-y: hidden;
+    }
+
+    .more-info-group {
+        .modal-header {
+            background: #fff;
+            border: none;
+            justify-content: left;
+            padding: 35px 0 5px 20px;
+            border-radius: 0;
+
+            .title {
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+        &.modal.fade {
+            .modal-dialog {
+                width: calc(100% - 40px);
+                min-width: 315px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

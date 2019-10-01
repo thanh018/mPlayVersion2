@@ -1,0 +1,57 @@
+.tab-component {
+    .nav-item + .nav-item {
+        margin-left: 100px;
+        @media (max-width: 767px) {
+            margin-left: 30px;
+        }
+    }
+
+
+    &.nav-pills {
+        .nav-link,
+        .nav-link.active {
+            color: white;
+            background-color: transparent;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .nav-link {
+            width: 100%;
+            max-width: 120px;
+            &::before {
+                content: "";
+                background: $color-white;
+                bottom: -5px;
+                height: 3px;
+                width: 100%;
+                left: 0;
+                right: 0;
+                position: absolute;
+                opacity: 0;
+            }
+        }
+
+        .nav-link.active {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &+ .tab-content {
+        margin-top: 50px;
+
+        @media (max-width: 767px) {
+            margin-top: 30px;
+        }
+    }
+
+    .d-mobile {
+        display: none;
+        @media (max-width: 767px) {
+            display: inherit;
+        }
+    }
+}

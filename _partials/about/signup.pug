@@ -1,0 +1,32 @@
+.dialogs-box.signup-box-component
+    .sign-up-header.modal-header.dialog-header
+        button(type='button', data-dismiss='modal') 
+            span.icon-x ×
+            span.text-close CLOSE
+        h1.title.text-center.font-bold Sign up
+        p.text.text-center Create a free account to save your favourite shows and to leave ratings a comments 
+
+    form.form-signup.dialog-form
+        .group-item
+            lable.lable.username-label User-name
+            input(type="text" placeholder="John Smith")
+
+        .group-item
+            lable.lable.mobile-phone-label Mobile Phone
+            input(type="number" placeholder="+38912361829")
+
+        .group-item
+            lable.lable.password-label Password
+            input(type="password" placeholder="Password")
+        
+        .group-item
+            lable.lable.password-label Confirm Password
+            input(type="password" placeholder="Password")
+
+        .group-item.text-center
+            a(href="" data-signup-btn).btn-submit
+                img(src="assets/images/illustrations/sign-up.svg" alt="Sign up")
+            p.form-text.text-exits-account.text-center Have an account? 
+                a(href="#" title="" data-login).login-link.underline Login instead 
+
+    

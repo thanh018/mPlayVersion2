@@ -1,0 +1,28 @@
+@import '_common';
+@import '_test';
+@import '_header';
+@import '_footer';
+@import '_banner';
+@import '_post';
+@import '_video';
+@import '_content-video';
+@import '_comment-box';
+@import '_detail-box';
+@import '_post-card';
+@import '_dialogs-box';
+@import '_tab';
+@import '_chat';
+@import '_countdown';
+@import '_instruction-dialog';
+@import '_live-component';
+body {
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #000;
+    overflow-x: hidden;
+}

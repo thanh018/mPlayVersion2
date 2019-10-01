@@ -1,0 +1,125 @@
+.post-card-component {
+    color: #333;
+    background-color: #fff;
+
+
+    .version-black & {
+        background-color: #333;
+        color: $color-white;
+        .post-card-item.active {
+            background-color: #000;
+
+            @media (max-width: 767px) {
+                background-color: rgba(1, 169, 229, 0.3)
+            }
+
+            .post-card-inner {
+                align-items: center;
+            }
+        }
+    }
+
+
+    .post-card-header {
+
+        padding: 15px 10px;
+        button {
+            background-color: #000;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 30px;
+        }
+
+        .fa-chevron-down {
+            padding-left: 10px;
+        }
+    }
+    
+    font-size: 12px;
+    padding-right: 20px;
+    max-height: 450px;
+    overflow: auto;
+    padding: 0;
+
+    @media (max-width: 767px) {
+    }
+
+    .post-card-item {
+        padding: 15px 10px;
+        .post-card-inner {
+            display: flex;
+            align-items: flex-start;
+
+            @media (max-width: 767px) {
+                align-items: center;
+            }
+        }
+
+        .d-mobile {
+            @media (max-width: 767px) {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .post-card-image {
+        max-width: 120px;
+        height: 90px;
+        position: relative;
+        flex-basis: 40%;
+
+        @media (max-width: 767px) {
+            max-width: 150px;
+            height: 100px;
+        }
+
+        .fa.fa-play {
+            width: 42px;
+            height: 42px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            &::before {
+                width: 42px;
+                height: 42px;
+                font-size: 18px;
+                line-height: 42px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+
+    .post-card-info {
+        padding-left: 10px;
+        flex-basis: 60%;
+    }
+
+    .episode-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: $color-grey;
+        text-transform: uppercase;
+        display: block;
+        font-weight: bold;
+    }
+    
+    .post-card-title {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    .post-card-time {
+        color: $color-grey;
+        font-size: 12px;
+        display: block;
+        margin-top: 2px;
+    }
+
+    .post-card-description {
+        margin-top: 2px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,171 @@
+//-------------  0.4. Mixins  -------------
+@mixin border-radius($param) {
+  -webkit-border-radius: $param;
+  -moz-border-radius: $param;
+  border-radius: $param;
+}
+
+@mixin box-shadow($param...) {
+  -webkit-box-shadow: $param;
+  -moz-box-shadow: $param;
+  box-shadow: $param;
+}
+
+@mixin transition($param...) {
+  -webkit-transition: $param;
+  -moz-transition: $param;
+  -o-transition: $param;
+  transition: $param;
+}
+
+@mixin transition-delay($param) {
+  -webkit-transition-delay: $param;
+  -moz-transition-delay: $param;
+  -o-transition-delay: $param;
+  transition-delay: $param;
+}
+
+@mixin animation($param) {
+  -webkit-animation: $param;
+  -moz-animation: $param;
+  -o-animation: $param;
+  animation: $param;
+}
+
+@mixin transform-origin($param) {
+  -webkit-transform-origin: $param;
+  -moz-transform-origin: $param;
+  -ms-transform-origin: $param;
+  -o-transform-origin: $param;
+  transform-origin: $param;
+}
+
+@mixin transform($param...) {
+  -webkit-transform: $param;
+  -moz-transform: $param;
+  -o-transform: $param;
+  transform: $param;
+}
+
+@mixin background-gradient($param...) {
+  background: -webkit-linear-gradient($param);
+  background: -moz-linear-gradient($param);
+  background: -o-linear-gradient($param);
+  background: linear-gradient($param);
+}
+
+@mixin l-height($param) {
+  height: $param;
+  line-height: $param;
+}
+
+@mixin filter($param) {
+  -webkit-filter: $param;
+  filter: $param;
+}
+
+@mixin flex() {
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-property($property, $param) {
+  -webkit-#{$property}: $param;
+  #{$property}: $param;
+}
+
+@mixin column-n($property, $expression, $expression_pa) {
+  #{$property} {
+    &.list-news-tweet {
+      .recent-post {
+        width: -moz-calc(#{$expression});
+        width: -webkit-calc(#{$expression});
+        width: calc(#{$expression});
+        display: inline-block;
+        vertical-align: top;
+        margin: $expression_pa;
+      }
+    }
+  }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@mixin font-style($size: false, $lh: false, $weight: false, $color: false) {
+  @if $size { font-size: $size; }
+  @if $lh { line-height: $lh; }
+  @if $weight { font-weight: $weight; }
+  @if $color { color: $color; }
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  align-items: $justify;
+  justify-content: $align;
+}
+
+@mixin breakpoint($media) {
+  @if $media == mini-phone {
+    @media (max-width: 375px) { @content; }
+  }
+  @if $media == phone {
+      @media (max-width: 479px) { @content; }
+  }
+  @if $media == max-phone {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $media == tablet {
+      @media (max-width: 768px) {@content; }
+  }
+  @else if $media == laptop {
+      @media (max-width: 991px) { @content; }
+  }
+
+  @else if $media == desktop {
+      @media (max-width: 1199px) { @content; }
+  }
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+

@@ -1,0 +1,32 @@
+.dialogs-box.login-box-component
+    .login-header.dialog-header.modal-header
+        button(type='button', data-dismiss='modal') 
+            span.icon-x ×
+            span.text-close CLOSE
+        h1.title.text-center.font-bold Login
+
+    form.form-login.dialog-form
+        .group-item
+            lable.lable.mobile-phone-label Mobile Phone
+            input(type="number" placeholder="+38912361829")
+        
+        .delimiter
+            span.line.line-left
+            span.text-or or
+            span.line.line-right
+
+        .group-item
+            lable.lable.username-label User-name
+            input(type="text" placeholder="John Smith")
+
+        .group-item
+            lable.lable.password-label Password
+            input(type="password" placeholder="Password")
+
+        .group-item.text-center
+            a(href="#" data-login-btn).btn-submit
+                img(src="assets/images/illustrations/login.svg" alt="login")
+            p.form-text.text-exits-account.text-center New to mPlay? 
+                a.signup-link.underline(href="#" data-sign-up) Signup instead
+
+        

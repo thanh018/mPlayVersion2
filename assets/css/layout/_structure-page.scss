@@ -1,0 +1,61 @@
+.width-65 {
+    width: 65%;
+    padding-right: 20px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        padding-right: 0;
+    }
+ }   
+ 
+.width-35 {
+    width: 35%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+ }
+
+.structure-page {
+    background-color: #181818;
+    @media (max-width: 767px) {
+        header {
+            background-color: #000;
+            position: relative;
+    
+            .nav-left {
+                margin-top: 0;
+            }
+    
+            .nav-right {
+                display: none;
+            }
+        }
+
+        .d-flex {
+            display: block;
+        }
+
+        .small .video-component {
+            height: 230px;
+        }
+    }
+
+    .content-video-component-black {
+        padding: 30px 30px 20px 0;
+
+        @media (max-width: 767px) {
+            padding-top: 10px;
+        }
+    }
+    
+    
+    .more-info-of-banner {
+        margin-top: 75px;
+
+        @media (max-width: 767px) {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+extends ../_layouts/layout
+
+block head_end
+  link(rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css")
+  link(rel="stylesheet" type="text/css" href="assets/css/style.css")
+
+block content
+    
+    .more-info-of-banner.version-black
+        .container
+            .flex-desktop
+                .width-65
+                    .small
+                        include ../_partials/series/video
+                    include ../_partials/about/content-video-black
+                    .d-desktop
+                        include ../_partials/about/comment-box
+                .width-35
+                    include ../_partials/about/post-card
+                    include ../_partials/about/detail-box
+                    .small.d-desktop
+                        h4.title TRAILER
+                        include ../_partials/about/video
+
+block body_end

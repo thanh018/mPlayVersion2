@@ -1,0 +1,87 @@
+.chat-component {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 12px;
+
+    h1.title {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .chat-inner {
+        max-height: 400px;
+    }
+
+    .comment-list {
+        padding-right: 25px;
+        .comment-item {
+            display: flex;
+            align-items: flex-start;    
+            padding: 20px 10px;
+            background: #000;
+            border-radius: 10px;
+
+            &+ .comment-item {
+                margin-top: 20px;
+            }
+        }
+        .comment-description {
+            margin-top: 5px;
+        }
+
+        .distance-text {
+            padding: 0 5px;
+        }
+    }
+
+    a.user-name,
+    .comment-info span {
+        color: #707070;
+    }
+
+    .fa-user {
+        width: 42px;
+        height: 42px;
+        color: $color-black;
+        background-color: $color-white;
+        border-radius: 50%;
+        margin-right: 20px;
+        border-radius: 50%;
+        border: 1px solid;
+
+        &::before {
+            width: 42px;
+            height: 42px;
+            line-height: 40px;
+            font-size: 18px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    .commnent-enter-block {
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        input {
+            background-color: #fff;
+            color: #181818;
+            width: calc(100% - 87px);
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            height: 60px;
+            &::placeholder {
+                color: #333;
+                font-size: 12px;
+            }
+
+            &:focus {
+                outline: 0;
+            }
+        }
+
+    }
+}

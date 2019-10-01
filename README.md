@@ -1,0 +1,5 @@
+- npm i --save
+- npm i -g grunt gulp gulp-sass
+- npm install --global gulp-cli
+- npm install natives@1.1.6
+- gulp
